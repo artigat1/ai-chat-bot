@@ -12,15 +12,11 @@ Authorization: Bearer {{$dotenv NUXT_OPENAI_API_KEY}}
 }
 
 
-###
+### Response that should reply with an error
 POST http://localhost:3000/api/ai
 Content-Type: application/json
 
 {
-    "messages": [
-        {
-            "role": "user",
-            "content": "Are we there yet?"
-        }
-    ]
+    "agent": "facebookAgent",
+    "url": "https://www.whatsonstage.com/london-theatre/news/turbine-halls-faking-bad_58927.html"
 }
